@@ -1,12 +1,9 @@
+/*General*/
 *{
     margin: 5px;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-body{
-    background-color: #EFF6FF;
 }
 
 .head{
@@ -33,6 +30,7 @@ body{
     font-size: small;
 }
 
+/*Registro y login*/
 .form{
     background-color: #00ACB1;
     width: 50%;
@@ -59,12 +57,59 @@ body{
 .btn{
     background-color: #052D3C !important;
     border: none !important;
+    font-size: large !important;
+    font-weight: bold !important;
 }
 
-.card-component:hover{
-    background-color: #188589;
+.btn:hover{
+    background-color: #188589 !important;
 }
 
-.card-component:active{
-    background-color: #046467;
+.btn:active{
+    background-color: #046467!important;
+}
+
+/*Dashboard, mascotas y citas*/
+
+.left-component{
+    background-color: #00ACB1;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    border-radius: 0 1em 1em 0;
+    margin-left: -70px;
+    padding: 15px 0;
+}
+.left-option{
+    display: flex;
+    align-items: center;
+}
+
+.left-title{
+    color: #052D3C;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.option-text{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+.option-icon{
+    height: 40px;
+    width: 40px;
+    padding-left: 10px;
+}
+
+.main-title{
+    color: #052D3C;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.form-icon{
+    height: 100px;
+    width: 100px;
 }

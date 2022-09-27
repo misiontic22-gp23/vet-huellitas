@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cliente.css">
+    <title> Veterinaria Huellitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="head row">
+            <div class="logo-header col-2">
+                <img class="logo" src="/assets/logo2.PNG" alt="logo Huellitas">
+                <span class="header-title">Veterinaria Huellitas</span>
+            </div>
+            <div class="col-auto">
+                <a class="btn btn-primary" href="/index.html" role="button">Regresar</a>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="left-component col-2">
+                    <span class="left-title">¡Bienvenido, Carlos!</span>
+                    <div class="left-option">
+                        <span class="option-text">Mascotas</span>
+                        <div class="option-icon-component">
+                            <img class="option-icon" src="/assets/paw-solid.svg" alt="Huella de perro">
+                        </div>
+                    </div>
+                    <div class="left-option">
+                        <span class="option-text">Citas</span>
+                        <div class="option-icon-component">
+                            <img class="option-icon" src="/assets/calendar-check-solid.svg" alt="Calendario">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+                </div>
+                <div class="col-10">
+                    <div class="form">
+                        <span class="main-title">Registra tu mascota</span>
+                        <div class="item row">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Fecha</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="date" id="inputPassword6" class="form-control">
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Hora</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="time" id="inputPassword6" class="form-control">
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Mascota</label>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccionar</option>
+                                    <option value="1">Firulais</option>
+                                    <option value="2">Pancha</option>
+                                    <option value="3">Bigotes</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Especialista</label>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccionar</option>
+                                    <option value="1">Ana Vergel</option>
+                                    <option value="2">Mauricio Acosta</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Tipo de consulta</label>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccionar</option>
+                                    <option value="1">Chequeo</option>
+                                    <option value="2">Desparasitación</option>
+                                    <option value="3">Vacunación</option>
+                                    <option value="4">Laboratorio</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="col-auto">
+                                <label for="inputPassword6" class="col-form-label">Danos una breve descripción de tu consulta</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="text" id="inputPassword6" class="form-control" placeholder="Opcional">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agendar</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <footer>
+            <h6>Misión TIC Todos los derechos reservados ©</h6>
+        </footer>
+    </div>
+</body>
+</html>
