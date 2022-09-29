@@ -5,6 +5,19 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body{
+    background-image: url(/assets/wallpaper-vet.jpg);
+}
+
+.container-fluid{
+    height: 100%;
+    width: 100%;
+    margin: -16px;
+    background:linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
+    background-position: absolute;
+    background-size: cover;
+}
+
 .head{
     text-align:center;
     color: #052D3C;
@@ -19,24 +32,21 @@
     height: 150px;
 }
 
-.carousel-inner{
-    margin-left: 15%;
-    width: 400px;
+.carousel{
+    width: 50%;
+    left: 25%;
 }
 
-#slider-component img{
-    border-radius: 15%;
+.img-item{
+    border-radius: 25px;
     height: 400px;
 }
 
 .carousel-caption{
     background-color: rgba(255, 255, 255, 0.59);
-    height: 5px;
-}
-
-.img-text{
-    color: #052D3C;
-    font-weight: bold;
+    height: 85px;
+    border-radius: 25px;
+    color: #052D3C !important;
 }
 
 .login-cards{

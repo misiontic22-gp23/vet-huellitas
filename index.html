@@ -4,60 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/cliente.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title> Veterinaria Huellitas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="head">
-        <img class="logo" src="/assets/logo2.PNG" alt="logo Huellitas">
-        <h1>Bienvenido a tu Veterinaria Huellitas</h1>
-        <h2>Más que tu mascota, es tu familia</h2>
-    </div>
-    <div class="main-componet">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div id="slider-component" class="carousel-item active">
-                    <img src="/assets/dogtor.png" class="d-block w-75" alt="perrito dogtor">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p class="img-text">Contamos con los mejores profesionales.</p>
+    <div class="container-fluid">
+        <div class="head">
+            <img class="logo" src="/assets/logo2.PNG" alt="logo Huellitas">
+            <h1>Bienvenido a tu Veterinaria Huellitas</h1>
+            <h2>Más que tu mascota, es tu familia</h2>
+        </div>
+        <div class="container">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/assets/dogtor.jpg" class="img-item d-block w-100" alt="Perrito doctor">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cuidados especiales</h5>
+                            <p>Contamos con los mejores profesionales.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/assets/vet1.jpg" class="img-item d-block w-100" alt="Veterinario">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>El mejor trato</h5>
+                            <p>Cuidamos a tu amigo como tú a él.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/assets/desparasitarVet.jpg" class="img-item d-block w-100" alt="Desparasitación perro">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Desparasitación</h5>
+                            <p>Para mantener sano a tu amigo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/assets/vacunaVet.jpg" class="img-item d-block w-100" alt="Vacunación perro">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vacunación</h5>
+                            <p>Completa su esquema para prevenir enfermedades.</p>
+                        </div>
                     </div>
                 </div>
-                <div id="slider-component" class="carousel-item">
-                    <img src="/assets/vet1.jpg" class="d-block w-75" alt="veterinario">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p class="img-text">Cuidamos a tu amigo como tú a él.</p>
-                    </div>
-                </div>
-                <div id="slider-component" class="carousel-item">
-                    <img src="/assets/desparasitarVet.jpg" class="d-block w-75" alt="desparacitación perro">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p class="img-text">Brindamos servicio de desparasitación.</p>
-                    </div>
-                </div>
-                <div id="slider-component" class="carousel-item">
-                    <img src="/assets/vacunaVet.jpg" class="d-block w-75" alt="desparacitación perro">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p class="img-text">Programa de prevención y vacunación.</p>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="login-cards">
+                <a href="/html/cliente/login.html" class="card-component">
+                    <h2 class="card-text">Inicia sesión para agendar tu cita</h2>
+                    <img class="card-image" src="/assets/calendar-check-solid.svg" alt="Calendario cita">
+                </a>
+                <a href="/html/veterinario/login.html" class="card-component">
+                    <h2 class="card-text">Acceso para veterinarios</h2>
+                    <img class="card-image" src="/assets/stethoscope-solid.svg" alt="Acceso veterinarios">
+                </a>
             </div>
         </div>
-        <div class="login-cards">
-            <a href="/html/cliente/login.html" class="card-component">
-                <h2 class="card-text">Inicia sesión para agendar tu cita</h2>
-                <img class="card-image" src="/assets/calendar-check-solid.svg" alt="Calendario cita">
-            </a>
-            <a href="/html/veterinario/login.html" class="card-component">
-                <h2 class="card-text">Acceso para veterinarios</h2>
-                <img class="card-image" src="/assets/stethoscope-solid.svg" alt="Acceso veterinarios">
-            </a>
+        <div class="footer-component">
+            <h6>Misión TIC Todos los derechos reservados ©</h6>
         </div>
-    </div>
-    <div class="footer-component">
-        <h6>Misión TIC Todos los derechos reservados ©</h6>
     </div>
 </body>
 </html>
