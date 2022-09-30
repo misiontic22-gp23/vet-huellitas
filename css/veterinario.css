@@ -7,13 +7,13 @@
 }
 
 body{
-    background-image: url(/assets/wallpaper-vet.jpg);
+    background-image: url(/assets/wallpaper-vet2.jpg);
 }
 
 .container-fluid{
     height: 100%;
     width: 100%;
-    background:linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
+    background:linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35));
     background-position: absolute;
     background-size: cover;
 }
@@ -102,45 +102,31 @@ body{
 
 /*Dashboard e historia clínica*/
 
-.left-component{
-    background-color: #00ACB1;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    flex-direction: column;
-    border-radius: 0 1em 1em 0;
-    margin-left: -70px;
-    padding: 15px 0;
-}
-.left-option{
-    display: flex;
-    align-items: center;
-}
-
-.left-title{
-    color: #052D3C;
-    font-size: x-large;
-    font-weight: bolder;
-}
-
-.option-text{
-    color: white;
-    font-size: larger;
-    font-weight: bold;
-}
-.option-icon{
-    height: 40px;
-    width: 40px;
-    padding-left: 10px;
-}
-
 .main-title{
     color: #052D3C;
     font-size: x-large;
     font-weight: bolder;
 }
 
-.form-icon{
+table{
+    border: #052D3C solid !important;
+}
+
+thead{
+    background-color: #052D3C !important;
+    color: white !important;
+}
+
+table tr:nth-child(even) td{
+    background-color: #C0EFF0 !important;
+}
+
+table tr:nth-child(odd) td{
+    background-color: #fff !important;
+}
+
+.table-icon{
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }

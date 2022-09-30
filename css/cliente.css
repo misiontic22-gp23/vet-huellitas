@@ -140,7 +140,25 @@ body{
     font-weight: bolder;
 }
 
-.form-icon{
+table{
+    border: #052D3C solid !important;
+}
+
+thead{
+    background-color: #052D3C !important;
+    color: white !important;
+}
+
+table tr:nth-child(even) td{
+    background-color: #C0EFF0 !important;
+}
+
+table tr:nth-child(odd) td{
+    background-color: #fff !important;
+}
+
+.table-icon{
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
