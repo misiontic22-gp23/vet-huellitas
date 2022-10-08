@@ -109,7 +109,7 @@ body{
     justify-content:space-around;
     flex-direction: column;
     border-radius: 0 1em 1em 0;
-    margin-left: -70px;
+    margin: 20px 0 20px -70px;
     padding: 15px 0;
 }
 .left-option{
@@ -161,4 +161,10 @@ table tr:nth-child(odd) td{
     height: 100px;
     width: 100px;
     cursor: pointer;
+}
+
+.obs-input{
+    width: 200% !important;
+    min-height: 100px;
+    margin-left: -100px !important;
 }

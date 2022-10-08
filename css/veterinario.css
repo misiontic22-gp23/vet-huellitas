@@ -130,3 +130,22 @@ table tr:nth-child(odd) td{
     width: 100px;
     cursor: pointer;
 }
+
+.history-form{
+    background-color: #00ACB1;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 0 50px 0 0;
+}
+
+.obs-title{
+    margin-left: 40%;
+}
+
+.obs-input{
+    width: 900px !important;
+    min-height: 200px;
+}
