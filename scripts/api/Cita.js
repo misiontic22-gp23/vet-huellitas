@@ -1,9 +1,12 @@
 class Cita extends Entity {
   constructor() {
     super("cita/");
-    this.setEntityName('Cita');
-    this.setEntitySetName('Citas');
-    this.setEntityMetadata(CitaMetadata);
-    this.setEntitySetMetadata(CitaSetMetadata);
+    this.fecha = '';
+    this.hora = '';
+    this.mascota = '';
+    this.veterinario = '';
+    this.descripcion = '';
+    this.consulta = '';
+    this.especialista = '';
   }
 }

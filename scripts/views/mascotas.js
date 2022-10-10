@@ -3,12 +3,24 @@ const MASCOTA = new Mascota();
 document.addEventListener('DOMContentLoaded', event => {
 
     function loadCategoryTable() {
-        MASCOTA.getEntities().then(mascotas => {
-            const mascotasList = document.getElementById('mascotas-list');
+        const tbody = document.querySelector("tbody");
+        tbody.innerHTML = "";
+        MASCOTA.findAll().then(mascotas => {
             mascotas.forEach(mascota => {
-                const li = document.createElement('li');
-                li.innerHTML = mascota.nombre;
-                mascotasList.appendChild(li);
+                const tr = document.createElement('tr');
+                tr.innerHTML += `
+                    <tr>
+                        <td>${mascota.id}</td>
+                        <td>${mascota.nombre}</td>
+                        <td>${mascota.especie}</td>
+                        <td>${mascota.raza}</td>
+                        <td>${mascota.sexo}</td>
+                        <td>${mascota.foto}</td>
+                        <td>
+                        <button type="button">Eliminar</button>
+                        </td>
+                    </tr>
+                `;
             });
         });
     }
@@ -16,20 +28,19 @@ document.addEventListener('DOMContentLoaded', event => {
     loadCategoryTable();
 
     document.querySelector("#mascota-insert").addEventListener("submit", event => {
-        event.preventDefault();
-        const nombre = document.querySelector("#mascota-nombre").value;
-        const edad = document.querySelector("#mascota-edad").value;
-        const dueno = document.querySelector("#mascota-dueno").value;
-        const categoria = document.querySelector("#mascota-categoria").value;
-        const mascota = {
-            nombre: nombre,
-            edad: edad,
-            dueno: dueno,
-            categoria: categoria
-        };
-        MASCOTA.insertEntity(mascota).then(() => {
+        MASCOTA.insert({
+            nombre: event.target.nombre.value,
+            especie: event.target.especie.value,
+            raza: event.target.raza.value,
+            sexo: event.target.sexo.value,
+            foto: event.target.foto.value,
+        }).then(mascota => {
+            event.target.reset();
             loadCategoryTable();
+            alert('La mascota fue creada exitosamente');
+        }).catch(() => {
+            alert('La mascota "' + Mascota.nombre + '" fue creada');
         });
-    });
+    }, false);
 
-});
+},false);

@@ -1,9 +1,11 @@
 class Vet extends Entity {
   constructor() {
     super("vet/");
-    this.setEntityName('Vet');
-    this.setEntitySetName('Vets');
-    this.setEntityMetadata(VetMetadata);
-    this.setEntitySetMetadata(VetSetMetadata);
+    this.nombre = '';
+    this.cedula = '';
+    this.matricula = '';
+    this.telefono = '';
+    this.usuario = '';
+    this.password = '';
   }
 }
