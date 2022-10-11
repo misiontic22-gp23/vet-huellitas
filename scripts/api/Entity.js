@@ -1,6 +1,6 @@
 class Entity {
 
-    url = "http://localhost:9000/api/";
+    url = "http://localhost:12000/api/";
 
     constructor(endpoint) {
         this.endpoint = endpoint;

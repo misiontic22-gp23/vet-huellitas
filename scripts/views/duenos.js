@@ -2,7 +2,7 @@ const DUENO = new Dueno();
 
 document.addEventListener('DOMContentLoaded', event => {
 
-    document.addEventListener('DOMContentLoaded', event => {
+    document.querySelector("#dueno-insert").addEventListener("submit", event => {
         DUENO.insert({
             nombre: event.target.nombre.value,
             cedula: event.target.cedula.value,

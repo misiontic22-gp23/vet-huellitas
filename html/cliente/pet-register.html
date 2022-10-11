@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/cliente.css">
+    <script src="/scripts/api/Entity.js"></script>
+    <script src="/scripts/api/Mascota.js"></script>
+    <script src="/scripts/views/mascotas.js"></script>
     <title> Veterinaria Huellitas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -42,62 +45,64 @@
                 <div class="col-10">
                     <div class="form">
                         <span class="main-title">Registra tu mascota</span>
-                        <div class="item row">
-                            <div class="col-auto">
-                                <label for="inputPassword6" class="col-form-label">Nombre</label>
+                        <form id = "">
+                            <div class="item row">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label">Nombre</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" id="inputPassword6" class="form-control">
+                                </div>
                             </div>
-                            <div class="col-auto">
-                                <input type="text" id="inputPassword6" class="form-control">
+                            <div class="item row">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label">Especie</label>
+                                </div>
+                                <div class="col-auto">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Seleccionar</option>
+                                        <option value="1">Perro</option>
+                                        <option value="2">Gato</option>
+                                        <option value="3">Otro</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item row">
-                            <div class="col-auto">
-                                <label for="inputPassword6" class="col-form-label">Especie</label>
+                            <div class="item row">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label">Raza</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" id="inputPassword6" class="form-control" placeholder="Opcional">
+                                </div>
                             </div>
-                            <div class="col-auto">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Seleccionar</option>
-                                    <option value="1">Perro</option>
-                                    <option value="2">Gato</option>
-                                    <option value="3">Otro</option>
-                                  </select>
+                            <div class="item row">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label">Sexo</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="text" id="inputPassword6" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                        <div class="item row">
-                            <div class="col-auto">
-                                <label for="inputPassword6" class="col-form-label">Raza</label>
+                            <div class="item row">
+                                <div class="col-auto">
+                                    <label for="inputPassword6" class="col-form-label">Edad</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="number" id="inputPassword6" class="form-control" placeholder="Opcional">
+                                </div>
                             </div>
-                            <div class="col-auto">
-                                <input type="text" id="inputPassword6" class="form-control" placeholder="Opcional">
+                            <div class="item row">
+                                <div class="col-auto">
+                                    <img src="/assets/paw-solid.svg" class="form-icon img-thumbnail" alt="Imagen por defecto">
+                                    <br>
+                                    <span>Opcional</span>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <button type="submit" class="btn btn-primary">Sube una foto</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item row">
-                            <div class="col-auto">
-                                <label for="inputPassword6" class="col-form-label">Sexo</label>
-                            </div>
-                            <div class="col-auto">
-                                <input type="text" id="inputPassword6" class="form-control">
-                            </div>
-                        </div>
-                        <div class="item row">
-                            <div class="col-auto">
-                                <label for="inputPassword6" class="col-form-label">Edad</label>
-                            </div>
-                            <div class="col-auto">
-                                <input type="number" id="inputPassword6" class="form-control" placeholder="Opcional">
-                            </div>
-                        </div>
-                        <div class="item row">
-                            <div class="col-auto">
-                                <img src="/assets/paw-solid.svg" class="form-icon img-thumbnail" alt="Imagen por defecto">
-                                <br>
-                                <span>Opcional</span>
-                            </div>
-                            <div class="col-auto align-self-center">
-                                <button type="submit" class="btn btn-primary">Sube una foto</button>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Registrar</button>
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </form>
                     </div>
                 </div>
             </div>

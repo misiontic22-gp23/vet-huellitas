@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../huellitas"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vet-huellitas"
+	}
+}
