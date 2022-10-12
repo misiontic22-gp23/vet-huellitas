@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', event => {
             loadCategoryTable();
             alert('La cita fue creada exitosamente');
         }).catch(() => {
-            alert('La cita "' + Cita.fecha + '" fue creada');
+            alert('La cita "' + cita.fecha + '" fue creada');
         });
     }, false);
 }, false);

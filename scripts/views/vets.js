@@ -11,11 +11,12 @@ document.addEventListener('DOMContentLoaded', event =>{
             usuario: event.target.usuario.value,
             password: event.target.password.value,
             email: event.target.email.value,
-        }).then(() => {
+        }).then(vet => {
+            event.target.reset();
             loadCategoryTable();
             alert('Se ha creado satisfactoriamente el perfil');
         }).catch(()=> {
-                alert('El perfil "'+Vet.name+'" fue creada');
+                alert('El perfil "'+vet.nombre+'" fue creada');
             });
         }, false);
 

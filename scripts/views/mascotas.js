@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', event => {
             loadCategoryTable();
             alert('La mascota fue creada exitosamente');
         }).catch(() => {
-            alert('La mascota "' + Mascota.nombre + '" fue creada');
+            alert('La mascota "' + mascota.nombre + '" fue creada');
         });
     }, false);
 

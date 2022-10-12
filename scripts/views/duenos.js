@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', event => {
             usuario: event.target.usuario.value,
             password: event.target.password.value,
             email: event.target.email.value,
-        }).then(Dueno => {
+        }).then(dueno => {
             event.target.reset();
             loadCategoryTable();
             alert('Se ha creado satisfactoriamente el perfil');
     }).catch(()=> {
-                alert('El perfil "'+Dueno.nombre+'" fue creada');
+                alert('El perfil "'+dueno.nombre+'" fue creada');
         });
     }, false);
 
