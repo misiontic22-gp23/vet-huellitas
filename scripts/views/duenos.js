@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', event => {
             loadCategoryTable();
             alert('Se ha creado satisfactoriamente el perfil');
     }).catch(()=> {
-                alert('El perfil "'+dueno.nombre+'" fue creada');
+                alert('El perfil "'+Dueno.nombre+'" fue creada');
         });
     }, false);
 
