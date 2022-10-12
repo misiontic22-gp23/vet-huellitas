@@ -6,5 +6,6 @@ class Dueno extends Entity {
     this.telefono = '';
     this.usuario = '';
     this.password = '';
+    this.email = '';
   }
 }

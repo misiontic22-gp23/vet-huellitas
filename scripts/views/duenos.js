@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', event => {
             telefono: event.target.telefono.value,
             usuario: event.target.usuario.value,
             password: event.target.password.value,
+            email: event.target.email.value,
         }).then(Dueno => {
             event.target.reset();
             loadCategoryTable();
