@@ -2,7 +2,7 @@ const VETS = new Vet();
 
 document.addEventListener('DOMContentLoaded', event =>{
 
-    document.querySelector("#category-insert").addEventListener("submit", event => {
+    document.querySelector("#vet-insert").addEventListener("submit", event => {
         VETS.insert({
             nombre: event.target.nombre.value,
             cedula: event.target.cedula.value,

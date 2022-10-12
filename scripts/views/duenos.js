@@ -17,6 +17,6 @@ document.addEventListener('DOMContentLoaded', event => {
     }).catch(()=> {
                 alert('El perfil "'+dueno.nombre+'" fue creada');
         });
-    },false);
+    }, false);
 
 },false);
