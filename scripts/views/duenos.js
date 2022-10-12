@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', event => {
             telefono: event.target.telefono.value,
             usuario: event.target.usuario.value,
             password: event.target.password.value,
-        }).then(dueno => {
+        }).then(Dueno => {
             event.target.reset();
             loadCategoryTable();
             alert('Se ha creado satisfactoriamente el perfil');
